@@ -4,7 +4,10 @@ Based on lessons from Ranga Rao Karanam's Udemy Course: Master Microservices wit
 
 Template cloud ready microservices using Spring Cloud
 
-Basic projects demonstrate
+Base-Services: 
+![alt text](https://github.com/MitchDresdner/SpringBoot-Micro-Services/images/BaseServices.png "Currency conversion services")
+
+These basic projects demonstrate
 - Communications between Microservices
 - Centralized Microservice Configuration with Spring Cloud Config Server
 - Spring Cloud Bus to exchange messages about Configuration updates
@@ -46,3 +49,13 @@ Basic projects demonstrate
 ## VM Argument
 
 -Dserver.port=8001
+
+## Workarounds as-of 30 Dec 2017
+```Feign throws Decode exception in M7, falling back to M3 to get support 
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.0.M3</version>	<!-- M7 -->
+		<relativePath/>
+	</parent>
+```
