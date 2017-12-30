@@ -4,7 +4,7 @@ Based on lessons from [Ranga Rao Karanam's Udemy Course](https://www.udemy.com/m
 
 Template cloud ready microservices using Spring Cloud
 
-Base-Services: 
+## Base-Services 
 ![alt text](https://github.com/MitchDresdner/SpringBoot-Micro-Services/blob/api-gateway/images/BaseServices.png "Currency conversion services")
 
 These basic projects demonstrate
@@ -54,7 +54,7 @@ These basic projects demonstrate
 
 <dl>
   <dt>Feign throws Decode exception in M7</dt>
-  <dd>Falling back to M3 to get support.</dd> 
+  <dd>Work around: Fall-back to M3 to get feign woring</dd> 
   
 ``` 
 	<parent>
