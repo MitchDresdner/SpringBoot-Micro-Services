@@ -1,6 +1,6 @@
 #  Spring Cloud Microservices with Spring Boot
 
-Based on lessons from Ranga Rao Karanam's Udemy Course: Master Microservices with Spring Boot and Spring Cloud
+Based on lessons from [Ranga Rao Karanam's Udemy Course](https://www.udemy.com/microservices-with-spring-boot-and-spring-cloud/learn/v4/overview): Master Microservices with Spring Boot and Spring Cloud
 
 Template cloud ready microservices using Spring Cloud
 
