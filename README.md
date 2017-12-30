@@ -1,4 +1,4 @@
-#  Spring Cloud Microservices with Spring Boot
+##  Spring Cloud Microservices with Spring Boot
 
 Based on lessons from [Ranga Rao Karanam's Udemy Course](https://www.udemy.com/microservices-with-spring-boot-and-spring-cloud/learn/v4/overview): Master Microservices with Spring Boot and Spring Cloud
 
@@ -18,7 +18,7 @@ These basic projects demonstrate
 - Distributed tracing with Spring Cloud Sleuth and Zipkin
 - Fault Tolerance with Zipkin
 
-## Ports
+### Ports
 
 |     Application       |     Port          |
 | ------------- | ------------- |
@@ -32,7 +32,7 @@ These basic projects demonstrate
 | Zipkin Distributed Tracing Server | 9411 |
 
 
-## URLs
+### URLs
 
 |     Application       |     URL          |
 | ------------- | ------------- |
@@ -46,12 +46,16 @@ These basic projects demonstrate
 | Zipkin | http://localhost:9411/zipkin/ |
 | Spring Cloud Bus Refresh | http://localhost:8080/bus/refresh |
 
-## VM Argument
+### Support for multiple servers on same host using VM Argument
 
--Dserver.port=8001
+    -Dserver.port=8001
 
 ### Workarounds as-of 30 Dec 2017
-Feign throws Decode exception in M7, falling back to M3 to get support
+
+<dl>
+  <dt>Feign throws Decode exception in M7</dt>
+  <dd>Falling back to M3 to get support.</dd> 
+  
 ``` 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -60,3 +64,5 @@ Feign throws Decode exception in M7, falling back to M3 to get support
 		<relativePath/>
 	</parent>
 ```
+
+<dl>
